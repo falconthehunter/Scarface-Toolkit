@@ -24,23 +24,24 @@ A sophisticated toolkit for penetration testing professionals, enabling ethical 
 ```bash
 pkg update && pkg upgrade
 pkg install git python
-git clone https://github.com/yourusername/Scarface
-cd Scarface
+git clone
+https://github.com/falconthehunter/Scarface-Toolkit.git
+cd Scarface-Toolkit
 pip3 install -r requirements.txt
 chmod +x setup.sh
 ./setup.sh
 ```
 🖥️ Linux/macOS
 ```
-git clone https://github.com/yourusername/Scarface
-cd Scarface
+git clone https://github.com/falconthehunter/Scarface-Toolkit.git
+cd Scarface-Toolkit
 sudo ./setup.sh
 pip3 install -r requirements.txt
 ```
 🖥️ Windows
 ```
-git clone https://github.com/yourusername/Scarface
-cd Scarface
+git clone https://github.com/falconthehunter/Scarface-Toolkit.git
+cd Scarface-Toolkit
 .\setup.bat
 pip install -r requirements.txt
 ```
