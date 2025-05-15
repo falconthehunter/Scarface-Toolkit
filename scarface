@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Universal launcher script
+set -eo pipefail
+
+# Get true script location (resolves symlinks)
+BASE_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || realpath "${BASH_SOURCE[0]}")")" && pwd)"
+
+# Required directories (relative to BASE_DIR)
+REQUIRED_DIRS=(
+    "scripts"
+    "sites" 
+    "results"
+)
+
+# Verify directory structure
+for dir in "${REQUIRED_DIRS[@]}"; do
+    if [[ ! -d "${BASE_DIR}/${dir}" ]]; then
+        echo "FATAL: Missing directory: ${dir}"
+        echo "Run from Scarface root folder"
+        exit 1
+    fi
+done
+
+# Execute main script with inherited arguments
+cd "${BASE_DIR}" && exec python3 scarface.py "$@"
