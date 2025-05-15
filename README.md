@@ -20,7 +20,7 @@ A sophisticated toolkit for penetration testing professionals, enabling ethical 
 
 ## 🛠️ Installation
 
-### Termux (Android)
+📱 Termux (Android)
 ```bash
 pkg update && pkg upgrade
 pkg install git python
@@ -30,12 +30,14 @@ pip3 install -r requirements.txt
 chmod +x setup.sh
 ./setup.sh
 ```
+🖥️ Linux/macOS
 ```
 git clone https://github.com/yourusername/Scarface
 cd Scarface
 sudo ./setup.sh
 pip3 install -r requirements.txt
 ```
+🖥️ Windows
 ```
 git clone https://github.com/yourusername/Scarface
 cd Scarface
@@ -46,6 +48,7 @@ pip install -r requirements.txt
 ```
 scarface
 ```
+⚙️ File's Structure
 ```
 Scarface/
 ├── scripts/          # Core modules
