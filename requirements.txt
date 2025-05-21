@@ -1,9 +1,12 @@
 # Core Requirements (Cross-Platform)
-Flask==2.2.2
-requests==2.28.2
-beautifulsoup4==4.11.1
-termcolor==2.2.0
-
+Flask==2.3.3
+requests==2.31.0
+beautifulsoup4==4.12.2
+# Supporting libraries
+lxml==5.2.1
+Werkzeug==2.3.8
 # Platform-Specific (Auto-Ignored in Termux)
 pywin32==306; sys_platform == 'win32'
 pyinstaller==5.13.0; sys_platform == 'win32'
+
+
